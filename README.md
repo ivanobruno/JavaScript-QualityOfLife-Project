@@ -16,7 +16,7 @@
 9. [Contact Information](#contact_information)
 
 ## General Info
-With this simple page, you can search for a city, in a database that includes the best cities in the world, to evaluate its characteristics and choose your next place where you are going to live.
+With this page, you can search for a city, in a database that includes the cities in the world, to evaluate it's characteristics.
 
 
 ## Description
