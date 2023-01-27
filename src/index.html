@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it_IT">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://i.ibb.co/JKG8kWf/icons8-globe-office-96.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Quality of life</title>
+    </head>
+    <body>
+        <header class="mb-5">
+            <div class="banner-container d-flex flex-column ">
+                <h1 id="title" class="mb-5 fw-bold">Best cities to live</h1>
+                <!-- Search bar -->
+                <section class="search-bar">
+                    <div class="input-group input-group-lg">
+                        <input class="input-bar form-control col-xs-4 text-dark" type="text" name="city" autocomplete="off" placeholder="Search for the city ...">        
+                        <button class="search-button btn btn-primary" type="submit" id="searchButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                        </button>
+                    </div>
+                    
+                </section>
+                <div class="error-city text-center"></div>
+            </div>
+        </header>
+        <main>
+            <!-- introduction and image -->
+            <section class="introduction">
+                <div class="container d-flex my-5">
+                    <div class="row">
+                            <div class=" mt-4 text-center">
+                                <h1 class="display-4 fw-bold">FIND YOUR CITY!</h1>
+                                <h4 class="">Move to the best place to live. Compare cities on quality of life, cost of living, salaries, safety, tolerance and more. Explore where to move based on your personal preferences.</h2>
+                                <div class="col-lg-3 img-city-1"></div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Results -->
+            <section class="results">
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="city col-lg-6">
+                            <!-- summary and score -->
+                            <div class="text-center">
+                                <div class="p-5">
+                                    <h1 class="fs-1 fw-bold text-uppercase city-id"></h1>
+                                </div>
+                                <div>
+                                    <h2 class="fw-bold">Summary:</h2>
+                                    <h4 class="city-summary"></h4>
+                                </div>
+                                <div class="mt-5 mb-5 d-flex justify-content-center">
+                                    <h2 class="fw-bold">City score:</h2> 
+                                    <h2 class="city-score"></h2>
+                                    <h2 class="max-score">/100</h2>
+                                </div>
+                                <div class="img-city-2"></div>
+                            </div>
+                        </div>
+                        <!-- Rates -->
+                        <div class="rates text-center col-lg-6">
+                            <div class="score-title p-5">
+                                <h1 class="fw-bold">RATES</h1>
+                            </div>
+                            <div class="score-section">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center text-light ">
+            <div class="text-center p-4">
+                Made by <a href="https://github.com/ivanobruno" target="_blank">Ivano Bruno</a> - © 2022
+            </div>
+        </footer>
+    </body>
+</html>

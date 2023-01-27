@@ -1,0 +1,72 @@
+@import "~bootstrap/scss/bootstrap";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    text-shadow: 0 0.05rem 0.1rem rgb(0 0 0 / 50%);
+    box-shadow: inset 0 0 32rem rgb(0 0 0 / 10%);
+}
+h1{
+    color: #0d6efd;
+}
+a{
+    color: white;
+}
+.error{
+    color: white;
+    text-decoration: underline red;
+}
+#title{
+    display: flex;
+    z-index: 1;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+.banner-container {
+    display: flex;
+    position: relative;
+    height: 40vh; 
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url('https://i.ibb.co/gJw4YGc/city.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);
+}
+.img-city-1{
+    height: 300px;
+    width: 100%;
+    background-image: url('https://i.ibb.co/6rcZcsH/city-2D.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.img-city-2{
+    margin-top: 200px;
+    height: 120px;
+    width: 100%;
+    background-image: url('https://i.ibb.co/6rcZcsH/city-2D.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.city2D{
+    margin-bottom: 0px;
+}
+.results{
+    display: none;
+}
+.city-score, .max-score{
+    color: #FFDF00;
+}
+footer, button{
+    background-color: #0d6efd;
+}
