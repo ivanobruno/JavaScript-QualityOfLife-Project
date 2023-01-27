@@ -1,11 +1,14 @@
 ![citySite png](https://user-images.githubusercontent.com/107309358/215171340-dbaf05d9-3061-4568-9214-4e9e94300876.png)
 
+<h2 align="center">
+  <a href="https://quality-of-life-by-ivano-bruno.netlify.app/" target="_blank">Website</a>
+</h2>
 
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Description](#description)
 3. [Technologies](#technologies)
-4. [External Services](#External_Services)
+4. [External Services](#external_services)
 5. [Installation](#installation)
 6. [Collaboration](#collaboration)
 7. [Know Bugs](#know_bugs)
