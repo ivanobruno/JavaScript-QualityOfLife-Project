@@ -3,6 +3,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const Dotenv = require('dotenv-webpack');
+
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -28,12 +30,15 @@ const config = {
     new MiniCssExtractPlugin({
       filename: './app/style.css',
     }),
+    
+    new Dotenv()
   ], 
   performance: {
     hints: false,
     maxEntrypointSize: 512000,
     maxAssetSize: 512000
   },
+  
   module: {
     rules: [
       {
