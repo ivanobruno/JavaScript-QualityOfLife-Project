@@ -11,6 +11,8 @@ const API_SUMMARY = process.env.API_SUMMARY;
 const API_CATEGORIES = process.env.API_CATEGORIES;
 const API_IMAGE = process.env.API_IMAGE;
 
+console.log(API_URL);
+
 export async function getData(){
     await axios.get(API_URL + `slug:${cityName}/scores/`)
     .then((response) => {
