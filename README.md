@@ -10,10 +10,11 @@
 3. [Technologies](#technologies)
 4. [External Services](#external_services)
 5. [Installation](#installation)
-6. [Collaboration](#collaboration)
-7. [Know Bugs](#know_bugs)
-8. [License](#license)
-9. [Contact Information](#contact_information)
+6. [Environment Variables](#environment_variables)
+7. [Collaboration](#collaboration)
+8. [Know Bugs](#know_bugs)
+9. [License](#license)
+10. [Contact Information](#contact_information)
 
 ## General Info
 With this page, you can search for a city, in a database that includes the cities in the world, to evaluate it's characteristics.
@@ -39,6 +40,8 @@ To run this project:
 * git clone https://github.com/brunoivano/JavaScript-QualityOfLife-Project.
 * Navigate to the top level of the directory.
 * Put the folder in your hosting program.
+
+## Environment_Variables
 
 ## Collaboration
 * No collaboration
