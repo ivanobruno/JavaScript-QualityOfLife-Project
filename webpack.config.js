@@ -30,7 +30,9 @@ const config = {
       filename: './app/style.css',
     }),
     
-    new Dotenv()
+    new Dotenv({
+      systemvars: true,
+    }),
   ], 
   performance: {
     hints: false,
