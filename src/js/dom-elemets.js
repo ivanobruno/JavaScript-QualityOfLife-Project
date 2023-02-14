@@ -52,7 +52,7 @@ searchButton.addEventListener('click', (e) => {
         cityName = correctName(inputBar.value);
         axios.get(API_URL + `slug:${cityName}/scores/`)
             .then(() =>
-                axios.get(API_URL + `slug:${cityName}/scores/`)
+                axios.head(API_URL + `slug:${cityName}/scores/`)
                 .then(({ data }) =>
                     getData(data)
                 )
@@ -72,7 +72,7 @@ inputBar.addEventListener('keypress', (e) => {
             cityName = correctName(inputBar.value);
             axios.get(API_URL + `slug:${cityName}/scores/`)
             .then(() =>
-                axios.get(API_URL + `slug:${cityName}/scores/`)
+                axios.head(API_URL + `slug:${cityName}/scores/`)
                     .then(({ data }) =>
                         getData(data)
                     )
