@@ -31,18 +31,14 @@ export function getError(message){
     errorCity.innerHTML = `<h3 class="error mt-2">${message}</h3>`; 
     return message;
 }
-export let loading = document.onreadystatechange = async function () {
-    var state = document.readyState
-    if (state == 'interactive') {
-        document.getElementById('contents').style.visibility="hidden";
-    } else if (state == 'complete') {
-        setTimeout(function(){
-            document.getElementById('interactive');
-            document.getElementById('load').style.visibility="hidden";
-            document.getElementById('contents').style.visibility="visible";
-        },1000);
-    }
-}
+
+window.onload = () => {
+    document.getElementById("load").style.visibility="visible";
+    setTimeout(function(){
+        document.getElementById("load").style.visibility="hidden";
+    },1000);
+};
+
 // Event Listener
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();
