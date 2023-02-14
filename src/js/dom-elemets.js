@@ -61,9 +61,10 @@ searchButton.addEventListener('click', (e) => {
                 getError('This city is not available, try again.');
             })
             inputBar.value = "";
+            errorCity.innerHTML = "";
     }
 });
-inputBar.addEventListener('keypress', (e) => {                 
+inputBar.addEventListener('keypress', (e) => {
     if(e.key === 'Enter') {
         e.preventDefault();
         if(inputBar.value == ""){
@@ -72,7 +73,7 @@ inputBar.addEventListener('keypress', (e) => {
             cityName = correctName(inputBar.value);
             axios.get(API_URL + `slug:${cityName}/scores/`)
             .then(() =>
-                axios.head(API_URL + `slug:${cityName}/scores/`)
+                axios.get(API_URL + `slug:${cityName}/scores/`)
                     .then(({ data }) =>
                         getData(data)
                     )
@@ -81,6 +82,7 @@ inputBar.addEventListener('keypress', (e) => {
                 getError('This city is not available, try again.');
             })
             inputBar.value = "";
+            errorCity.innerHTML = "";
         }
     }
 });
