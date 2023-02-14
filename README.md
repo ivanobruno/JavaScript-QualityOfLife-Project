@@ -42,9 +42,7 @@ To run this project:
 * Put the folder in your hosting program.
 
 ## Environment_Variables
-In the repo you can find a .env.example file. You have to put your api there and save the file as .env
-
-
+In the repo you can find a .env.example file. You have to put your api there and save the file as .env .
 
 ## Collaboration
 * No collaboration
