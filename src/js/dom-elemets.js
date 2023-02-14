@@ -50,7 +50,7 @@ searchButton.addEventListener('click', (e) => {
         getError('This field is required and cannot be empty.');
     }else {
         cityName = correctName(inputBar.value);
-        axios.head(API_URL + `slug:${cityName}/scores/`)
+        axios.get(API_URL + `slug:${cityName}/scores/`)
             .then(() =>
                 axios.get(API_URL + `slug:${cityName}/scores/`)
                 .then(({ data }) =>
@@ -70,7 +70,7 @@ inputBar.addEventListener('keypress', (e) => {
             getError('This field is required and cannot be empty.');
         }else {
             cityName = correctName(inputBar.value);
-            axios.head(API_URL + `slug:${cityName}/scores/`)
+            axios.get(API_URL + `slug:${cityName}/scores/`)
             .then(() =>
                 axios.get(API_URL + `slug:${cityName}/scores/`)
                     .then(({ data }) =>
