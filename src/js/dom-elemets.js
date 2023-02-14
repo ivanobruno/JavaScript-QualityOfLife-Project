@@ -32,12 +32,15 @@ export function getError(message){
     return message;
 }
 
-window.onload = () => {
-    document.getElementById("load").style.visibility="visible";
-    setTimeout(function(){
-        document.getElementById("load").style.visibility="hidden";
-    },1000);
-};
+async function load() {
+    window.onload = () => {
+        document.getElementById("load").style.visibility="visible";
+        setTimeout(function(){
+            document.getElementById("load").style.visibility="hidden";
+        },1000);
+    };
+}
+load()
 
 // Event Listener
 searchButton.addEventListener('click', (e) => {
