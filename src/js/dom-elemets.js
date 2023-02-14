@@ -49,6 +49,10 @@ searchButton.addEventListener('click', (e) => {
     if(inputBar.value == ""){
         getError('This field is required and cannot be empty.');
     }else {
+        document.getElementById("load").style.visibility="visible";
+        setTimeout(function(){
+            document.getElementById("load").style.visibility="hidden";
+        },1000);
         cityName = correctName(inputBar.value);
         axios.get(API_URL + `slug:${cityName}/scores/`)
             .then(() =>
@@ -70,6 +74,10 @@ inputBar.addEventListener('keypress', (e) => {
         if(inputBar.value == ""){
             getError('This field is required and cannot be empty.');
         }else {
+            document.getElementById("load").style.visibility="visible";
+            setTimeout(function(){
+                document.getElementById("load").style.visibility="hidden";
+            },1000);
             cityName = correctName(inputBar.value);
             axios.get(API_URL + `slug:${cityName}/scores/`)
             .then(() =>
